@@ -1,0 +1,84 @@
+/* Basic styling */
+body {
+  margin: 0;
+  padding: 0;
+  background: #0f2027;  /* fallback for old browsers */
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+  width: 300px;
+}
+
+.login-box h2 {
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid #333;
+  background: transparent;
+  outline: none;
+}
+
+/* Pseudo-class :focus */
+.input-box input:focus {
+  border-color: #3498db;
+}
+
+/* Pseudo-class :valid and label animation */
+.input-box input:valid + label,
+.input-box input:focus + label {
+  top: -20px;
+  font-size: 12px;
+  color: #3498db;
+}
+
+/* Label styling */
+.input-box label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #aaa;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Pseudo-class :hover */
+button:hover {
+  background: #2980b9;
+}
